@@ -5,8 +5,8 @@ import numpy as np
 mu=0.1; sigma=0.26;S0=39
 n_path=1000; n=n_partitions=1000;
 period=3;
-
-#theoritical expectation and variance
+ 
+#theoritical expectation and variance.
 T_E = S0 * p.exp(mu*period)
 T_Var = (S0**2)*(np.exp(2*mu*period))*(np.exp(sigma*sigma*period)-1)
 print('Theoritical Expectiation and Variance')
