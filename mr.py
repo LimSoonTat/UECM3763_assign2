@@ -1,12 +1,12 @@
 import pylab as p
 import numpy as np
 
-#Setup parameters
+#Setup parameters.
 alpha = 1;  theta = 0.064 
 sigma = 0.27; R0 = 3
 time = 1
 n_path = 1000; n_partition= 1000
-
+ 
 #Create Brownian paths
 dt = time / n_partition
 t = p.linspace(0,time,n_partition+1)[:-1];
