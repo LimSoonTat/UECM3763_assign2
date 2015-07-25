@@ -3,7 +3,7 @@ from datetime import datetime as dt
 import matplotlib.pyplot as plt
 import numpy as np
 
-#The collection of data starting from 17/7/2010 to 16/7/2015
+#The collection of data starting from 17/7/2010 to 16/7/2015.
 start = dt(2012, 7, 17)
 end = dt(2015, 7, 16)
 
@@ -16,7 +16,7 @@ def moving_average(values,average_day):
     weights=np.repeat(1.0,average_day)/average_day
     sma = np.convolve(values,weights,'valid')
     return sma
-    
+     
 #calculate 5 days moving average
 moving_average_5=moving_average(HongLeong_close,5)  
 
